@@ -1,0 +1,20 @@
+{
+  "name": "PWA Demo App",
+  "short_name": "PWA Demo",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#888",
+  "description": "My first PWA App description field",
+  "dir": "ltr",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "images/icon.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
