@@ -4,11 +4,11 @@
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#f5f5f5",
-  "theme_color": "#888",
+  "background_color": "#f9ce1d",
+  "theme_color": "#f9ce1d",
   "description": "My first PWA App description field",
   "dir": "ltr",
-  "lang": "en-US",
+  "lang": "en-au",
   "icons": [
     {
       "src": "images/icon.png",

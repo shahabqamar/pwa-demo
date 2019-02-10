@@ -36,3 +36,15 @@ $(function() {
     }
   );
 });
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw-workbox.js").then(function() {
+    console.log("Service worker registered!");
+  });
+
+  if ("Notification" in window) {
+    Notification.requestPermission(function(status) {
+      console.log("Notification permission status:", status);
+    });
+  }
+}
