@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      PWA
+    </title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="images/favicon.png" />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="css/app.css" rel="stylesheet" />
+    <!-- PWA Manifest-->
+    <link rel="manifest" href="manifest.json" />
+
+    <style>
+      .jumbotron {
+        background-image: url(images/banner.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">PWA Demo</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Main Menu -->
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/index.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">
+              About
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main">
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div id="content_container_881">
+            <div style="margin-top:2rem">
+              <h2 id="introduction" style="border-bottom: 0px">Introduction</h2>
+              <p>
+                <a href="https://developers.google.com/web/progressive-web-apps"
+                  >Progressive Web Apps</a
+                >
+                are experiences that combine the best of the web and the best of
+                apps. They are useful to users from the very first visit in a
+                browser tab, no install required. As the user progressively
+                builds a relationship with the app over time, it becomes more
+                and more powerful. It loads quickly, even on flaky networks,
+                sends relevant push notifications, has an icon on the home
+                screen, and loads as a top-level, full screen experience.
+              </p>
+              <h3 id="what_is_a_progressive_web_app">
+                <img
+                  src="images/phone.png"
+                  alt=""
+                  width="195"
+                  height="385"
+                  style="float: right; margin: 1em 0px 1em 1em;"
+                />What is a Progressive Web App?
+              </h3>
+              <p>A Progressive Web App is:</p>
+              <ul>
+                <li>
+                  <strong>Progressive</strong> - Works for every user,
+                  regardless of browser choice because it's built with
+                  progressive enhancement as a core tenet.
+                </li>
+                <li>
+                  <strong>Responsive</strong> - Fits any form factor: desktop,
+                  mobile, tablet, or whatever is next.
+                </li>
+                <li>
+                  <strong>Connectivity independent</strong> - Enhanced with
+                  service workers to work offline or on low-quality networks.
+                </li>
+                <li>
+                  <strong>App-like</strong> - Feels like an app, because the app
+                  shell model separates the application&nbsp;<em
+                    >functionality</em
+                  >
+                  from application<em>content</em> .
+                </li>
+                <li>
+                  <strong>Fresh</strong> - Always up-to-date thanks to
+                  the&nbsp;<a
+                    href="https://developers.google.com/web/fundamentals/getting-started/primers/service-workers"
+                    >service worker</a
+                  >
+                  update process.
+                </li>
+                <li>
+                  <strong>Safe</strong> - Served via HTTPS to prevent snooping
+                  and to ensure content hasn't been tampered with.
+                </li>
+                <li>
+                  <strong>Discoverable</strong> - Is identifiable as an
+                  "application" thanks to&nbsp;<a
+                    href="https://developers.google.com/web/updates/2014/11/Support-for-installable-web-apps-with-webapp-manifest-in-chrome-38-for-Android"
+                    >W3C manifest</a
+                  >
+                  and&nbsp;<a
+                    href="https://developers.google.com/web/fundamentals/instant-and-offline/service-worker/registration"
+                    >service worker registration</a
+                  >
+                  scope, allowing search engines to find it.
+                </li>
+                <li>
+                  <strong>Re-engageable</strong> - Makes re-engagement easy
+                  through features like push notifications.
+                </li>
+                <li>
+                  <strong>Installable</strong> - Allows users to add apps they
+                  find most useful to their home screen without the hassle of an
+                  app store.
+                </li>
+                <li>
+                  <strong>Linkable</strong> - Easily share the application via
+                  URL, does not require complex installation.
+                </li>
+              </ul>
+              <p>
+                This codelab will walk you through creating your own Progressive
+                Web App, including the design considerations, as well as
+                implementation details, to ensure that your app meets the above
+                key principles of a Progressive Web App.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /container -->
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>
+        &copy; Company 2019-2020 | Powered by
+        <a href="https://newsapi.org">newsapi.org</a>
+      </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/app.js"></script>
+    <!-- app.js -->
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js").then(function() {
+          console.log("Service worker registered!");
+        });
+      }
+    </script>
+  </body>
+</html>
